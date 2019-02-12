@@ -4,13 +4,14 @@
 <head th:fragment="head(title)">
     <meta charset="UTF-8"/>
     <title th:text="${title}"></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
     <!--<link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>-->
 </head>
 
 <body>
 <!--<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar uk-margin-bottom">-->
-    <nav th:fragment="navbar"  style="background-color: #CCCCFF" class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+    <nav th:fragment="navbar"  style="background-color: rgb(250, 217, 0)" class="uk-navbar-container uk-margin" uk-navbar="mode: click">
 
         <div class="uk-navbar-center">
 
@@ -66,9 +67,57 @@
 </div>
 
 
-<div th:fragment="footer">
+
+
+<!--<a id="about"></a>-->
+<!--<h2 class="text-center">About Me</h2>-->
+
+<!--<div id="aboutMe">-->
+    <!--<img data-src="../static/img/luchador-mask-closeup.jpg" width="1450" height="100" alt="" uk-img>-->
+<!--</div>-->
+<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-sizes="(min-width: 650px) 650px, 100vw" data-src="../static/img/luchador-mask-closeup.jpg" uk-img>
+    <h2>El Luchador Bar</h2>
+</div>
+
+<div class="service">
+    <a id="service"></a>
+</div>
+
+
+
+<!--<a id="rates">-->
+<!--<br>-->
+<!--<h2 class="text-center">Rates</h2></a>-->
+<!--<p id="ratesPara">Rates for events varies, based on setup selection and the location of the events. Here are some free quotes to give you a general idea.</p>-->
+
+<a id="contact"></a>
+<h2 class="text-center">Contact Me</h2>
+
+<div class="container bg-transparent">
+</div>
+
+<!--<footer class="col">-->
+    <!--<section id="social" class="row">-->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <!--&lt;!&ndash; Add font awesome icons &ndash;&gt;-->
+        <!--&lt;!&ndash; Add icon library &ndash;&gt;-->
+        <!--<a href="https://www.facebook.com/DJ-STEViE-G-satx-169237906485599/" target="_blank" class="fa fa-facebook col-4"></a>-->
+
+        <!--<a href="https://www.instagram.com/luchadorbarsa/" target="_blank" class="fa fa-instagram col-4"></a>-->
+
+        <!--<a href="http://www.twitter.com/DJSTEViEG_satx" target="_blank" class="fa fa-twitter col-4"></a>-->
+    <!--</section>-->
+<!--</footer>-->
+
+
+<a href="#top">Go to the top of the page</a>
+
+
+<div th:fragment="footer" style="background-color: #000000; color: rgb(244, 0, 0)">
     <footer class="footer uk-flex">
-        <span class="uk-margin-auto">Follow us on Facebook @El Luchador </span>
+        <span class="uk-margin-auto"><a href="https://www.facebook.com/luchadorbarsa/" style="color: white" class="fa fa-facebook"></a>
+</span>
+        <span class="uk-margin-auto"><a href="https://www.instagram.com/luchadorbarsa/" style="color: white" class="fa fa-instagram"></a></span>
     </footer>
 </div>
 
