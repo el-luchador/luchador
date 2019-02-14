@@ -7,19 +7,14 @@ import com.codeup.elluchador.repositories.UserRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@SuppressWarnings("ALL")
 @Controller
 public class UserController {
-    private User user;
-    private UserRepository userDao;
-    private Admin admin;
-    private AdminRepository adminDao;
+    private final UserRepository userDao;
+//    private final AdminRepository adminDao;
 
-    public UserController (User user, UserRepository userDao, Admin admin, AdminRepository adminDao) {
-        this.user = user;
+    public UserController (UserRepository userDao) {
         this.userDao = userDao;
-        this.admin = admin;
-        this.adminDao = adminDao;
+//        this.adminDao = adminDao;
     }
     @GetMapping("/")
     public String homePage() {

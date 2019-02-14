@@ -8,9 +8,11 @@ CREATE TABLE admin (
   admin_last_name VARCHAR(240),
   PRIMARY KEY(id)
 );
-CREATE TABLE IF NOT EXISTS user (
+
+DROP TABLE user;
+CREATE TABLE user (
   id INT UNSIGNED AUTO_INCREMENT NOT NULL,
-  first_name VARCHAR(240),
-  last_name VARCHAR(240),
+  user_first_name VARCHAR(240),
+  user_last_name VARCHAR(240),
   PRIMARY KEY (id)
 )
