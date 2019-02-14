@@ -5,38 +5,48 @@ import javax.persistence.*;
 import javax.persistence.Entity;
 
 @Entity
-@Table(name = "Admin")
+@Table(name = "admin")
 public class Admin {
 
     @Column
-    private String name;
+    @Id
+    private long id;
 
     @Column
-    private String username;
+    private String admin_first_name;
 
     @Column
-    private Boolean isAdmin;
-
-
+    private String admin_last_name;
 
     public Admin () {
     }
 
-    public Admin(String name, String username, Boolean isAdmin) {
-        this.name = name;
-        this.username = username;
-        this.isAdmin = isAdmin;
+    public Admin(String admin_first_name, String admin_last_name) {
+        this.admin_first_name = admin_first_name;
+        this.admin_last_name = admin_last_name;
     }
 
-    public String getName() { return name; }
+    public String getAdmin_first_name() {
+        return admin_first_name;
+    }
 
-    public void setName(String name) { this.name = name; }
+    public void setAdmin_first_name(String admin_first_name) {
+        this.admin_first_name = admin_first_name;
+    }
 
-    public String getUsername() { return username; }
+    public String getAdmin_last_name() {
+        return admin_last_name;
+    }
 
-    public void setUsername(String username) { this.username = username; }
+    public void setAdmin_last_name(String admin_last_name) {
+        this.admin_last_name = admin_last_name;
+    }
 
-    public Boolean getAdmin() { return isAdmin; }
+    public long getId() {
+        return id;
+    }
 
-    public void setAdmin(Boolean admin) { isAdmin = admin; }
+    public void setId(long id) {
+        this.id = id;
+    }
 }

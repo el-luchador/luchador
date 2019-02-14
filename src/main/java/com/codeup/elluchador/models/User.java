@@ -2,38 +2,53 @@ package com.codeup.elluchador.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "User")
+@Table(name = "user")
 public class User {
 
     @Column
-    private String name;
+    @Id
+    private Long id;
 
     @Column
-    private String username;
+    private String user_first_name;
 
     @Column
-    private Boolean isAdmin;
+    private String user_last_name;
 
-    public User(String name, String username, Boolean isAdmin) {
-        this.name = name;
-        this.username = username;
-        this.isAdmin = isAdmin;
+    public User(){
     }
 
-    public User(){}
+    public User(Long id, String user_first_name, String user_last_name) {
+        this.id = id;
+        this.user_first_name = user_first_name;
+        this.user_last_name = user_last_name;
+    }
 
-    public String getName() { return name; }
+    public Long getId() {
+        return id;
+    }
 
-    public void setName(String name) { this.name = name; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public String getUsername() { return username; }
+    public String getUser_first_name() {
+        return user_first_name;
+    }
 
-    public void setUsername(String username) { this.username = username; }
+    public void setUser_first_name(String user_first_name) {
+        this.user_first_name = user_first_name;
+    }
 
-    public Boolean getAdmin() { return isAdmin; }
+    public String getUser_last_name() {
+        return user_last_name;
+    }
 
-    public void setAdmin(Boolean admin) { isAdmin = admin; }
+    public void setUser_last_name(String user_last_name) {
+        this.user_last_name = user_last_name;
+    }
 }
