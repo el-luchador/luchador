@@ -37,15 +37,14 @@
                         <div class="uk-navbar-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#viewEvents">View Events</a></li>
-                                <li><a href="#drinkMenu">View Specials</a></li>
+                                <li><a href="#viewEvents">Events</a></li>
+                                <li><a href="#drinkMenu">Drink Specials</a></li>
+                                <li><a href="#merch">Merchandise</a></li>
+                                <li><a href="#contactUs">Contact</a></li>
                                 <li sec:authorize="!isAuthenticated()"><a href="/login">Login</a></li>
                                 <li sec:authorize="isAuthenticated()"><a href="/logout">Logout</a></li>
                             </ul>
                         </div>
-                    </li>
-                    <li sec:authorize="!isAuthenticated()" class="uk-visible@l">
-                        <a class="nav-link" href="/sign-up" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/add-user-male.png" />Register</a>
                     </li>
                     <li class="uk-visible@s"><a class="nav-link" style="color: black" href="#drinkMenu"><img class="uk-margin-small-left" src="https://img.icons8.com/material/24/000000/home-page.png" />Drinks</a></li>
                     <li class="uk-visible@s"><a href="#viewEvents" style="color: black"><img class="uk-margin-small-left" src="https://img.icons8.com/material/24/000000/search.png" />Events</a></li>
@@ -63,13 +62,16 @@
                     <li class="uk-visible@s">
                         <a class="nav-link" href="#merch" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/user-group-man-man.png" />Merchandise</a>
                     </li>
+                    <li class="uk-visible@s">
+                        <a class="nav-link" href="#merch" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/user-group-man-man.png" />Contact</a>
+                    </li>
                     <!--Logged out users see....-->
-                    <li sec:authorize="!isAuthenticated()" class="uk-visible@s">
-                        <a class="nav-link" href="#contactUs" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/import.png" />Contact</a>
-                    </li>
-                    <li sec:authorize="isAuthenticated()" class="uk-visible@s">
-                        <a class="nav-link" href="#contactUs" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/export.png" />Contact</a>
-                    </li>
+                    <!--<li sec:authorize="!isAuthenticated()" class="uk-visible@s">-->
+                        <!--<a class="nav-link" href="#contactUs" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/import.png" />Contact</a>-->
+                    <!--</li>-->
+                    <!--<li sec:authorize="isAuthenticated()" class="uk-visible@s">-->
+                        <!--<a class="nav-link" href="#contactUs" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/export.png" />Contact</a>-->
+                    <!--</li>-->
                 </ul>
             </div></div>
 
@@ -133,7 +135,7 @@
         <div>
             <div class="uk-card uk-card-default uk-card-large uk-card-body">
                 <h3 class="uk-card-title">Merchandise</h3>
-                <img src="../static/img/lucha-mask-red-closeup.jpg" alt="">
+                <img src="../static/img/luchador-logo.JPG" alt="">
             </div>
         </div>
     </div>
@@ -149,7 +151,7 @@
     <div>
         <div class="uk-card uk-card-default uk-card-large uk-card-body">
             <!--<div class="fb-page" data-href="https://www.facebook.com/luchadorbarsa/" data-tabs="events" data-width="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luchadorbarsa/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luchadorbarsa/">El Luchador</a></blockquote></div>-->
-            <form method="post" class="uk-grid-small" action="mailto:youremailaddress" uk-grid>
+            <form method="post" class="uk-grid-large" action="mailto:youremailaddress" uk-grid>
                 <div class="uk-width-1-1">
                     <label for="email">Email</label>
                     <input id="email"  name="email" class="uk-input" type="text" placeholder="Email">
@@ -174,8 +176,9 @@
                         </select>
                     </div>
                 </div>
-                <div class="uk-width-1-1">
-                    <textarea name="input_8" id="input_1_8" class="textarea large" aria-required="true" aria-invalid="false" rows="10" cols="50"></textarea>
+                <div class="uk-width-1-1@s">
+                    <label for="inquiring">Enter inquiry below</label>
+                    <textarea class="uk-textarea" rows="5" placeholder="Type of event, band's name, date, time, etc."></textarea>
                 </div>
                 <div class="uk-width-expand uk-flex uk-margin-top">
                     <button class="uk-button uk-button-primary" value="Submit" type="submit">Submit</button>
@@ -183,6 +186,10 @@
             </form>
         </div>
     </div>
+</div>
+
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.088333814304!2d-98.48806538480721!3d29.396971882122514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c589e74898b07%3A0xad32537c3419e985!2sEl+Luchador!5e0!3m2!1sen!2sus!4v1550112257868" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 
