@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="UTF-8"/>
-    <title>El-Luchador</title>
+    <title>El Luchador</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
 
     <style>
@@ -17,42 +17,55 @@
             z-index: 9999;
             width: 100vw;
         }
+        .luchador-logo {
+            position: fixed;
+            width: 125px;
+            padding-top: 10px;
+        }
+
     </style>
 </head>
 <body>
 
-<div class="uk-hidden@m nav-overlay">
-    <nav style="background-color: #CCCCFF" class="uk-navbar-container" uk-navbar="mode: click">
-        <ul class="uk-navbar-nav uk-navbar-center">
-            <li><a class="nav-link" href="/sign-up">Register</a></li>
-            <li class="uk-navbar-item uk-logo" >El-Luchador</li>
-            <li><a class="nav-link" href="/login">Login</a></li>
-        </ul>
-    </nav>
-</div>
+<!--<div class="nav-overlay">-->
+    <!--<nav style="background-color: rgb(250, 217, 0)" class="uk-navbar-container uk-navbar-center" uk-navbar="mode: click">-->
+        <!--<ul class="uk-navbar-nav uk-navbar-center">-->
+            <!--&lt;!&ndash;<li><a class="nav-link" href="/sign-up">Register</a></li>&ndash;&gt;-->
+            <!--<li class="uk-navbar-item uk-logo" ><img class="uk-margin-small luchador-logo" src="../../static/img/luchador-logo.JPG" /></li>-->
+            <!--&lt;!&ndash;<li><a class="nav-link" href="/login">Login</a></li>&ndash;&gt;-->
+        <!--</ul>-->
+    <!--</nav>-->
+<!--</div>-->
+<header>
+    <div class="uk">
+
+        <img src="../../static/img/luchador-logo-color-crop.png" style="width: 100vw;" alt="">
+
+    </div>
+</header>
 
 
-<div class="uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../../static/img/drink-ring.jpg');" uk-parallax="bgy: 200">
+<div class="uk-background-cover uk-light uk-flex uk-flex-top view-drinks" style="height: 100vh; width: 100vw; background-image: url('../../static/img/drink-ring.jpg');" uk-parallax="bgy: 200">
 
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">View Drinks.</h1>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">View Drinks</h1>
 
 </div>
 
 <div class="uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../../static/img/milmascaras.jpg');" uk-parallax="bgy: 200">
 
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Upcoming Events / Past Events.</h1>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Upcoming Events / Past Events</h1>
 
 </div>
 
 <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../../static/img/luchador-mask-fullview.jpg');" uk-parallax="bgy: 200">
 
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Shop Merchandise / Artists.</h1>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Shop Merchandise / Artists</h1>
 
 </div>
 
 <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../../static/img/lounge-wall.jpg');" uk-parallax="bgy: 200">
 
-    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Contact Information.</h1>
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Contact Information</h1>
 
 </div>
 
