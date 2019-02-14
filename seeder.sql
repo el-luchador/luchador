@@ -1,8 +1,16 @@
 CREATE DATABASE IF NOT EXISTS Luchador_db;
 
 USE Luchador_db;
-
+DROP TABLE admin;
 CREATE TABLE admin (
+  id INT UNSIGNED AUTO_INCREMENT NOT NULL,
   admin_first_name VARCHAR(240),
-  admin_last_name VARCHAR(240)
+  admin_last_name VARCHAR(240),
+  PRIMARY KEY(id)
+);
+CREATE TABLE IF NOT EXISTS user (
+  id INT UNSIGNED AUTO_INCREMENT NOT NULL,
+  first_name VARCHAR(240),
+  last_name VARCHAR(240),
+  PRIMARY KEY (id)
 )

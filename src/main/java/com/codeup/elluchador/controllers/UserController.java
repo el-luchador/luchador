@@ -7,6 +7,7 @@ import com.codeup.elluchador.repositories.UserRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+@SuppressWarnings("ALL")
 @Controller
 public class UserController {
     private User user;
