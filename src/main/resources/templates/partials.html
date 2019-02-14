@@ -31,7 +31,7 @@
 
 
             <div class="uk-navbar-center-left"><div>
-                <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav uk-margin-top uk-padding-large">
                     <li class="uk-hidden@l uk-navbar-left">
                         <a href="#">Menu</a>
                         <div class="uk-navbar-dropdown">
@@ -46,8 +46,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="uk-visible@s"><a class="nav-link" style="color: black" href="#drinkMenu"><img class="uk-margin-small-left" src="https://img.icons8.com/material/24/000000/home-page.png" />Drinks</a></li>
-                    <li class="uk-visible@s"><a href="#viewEvents" style="color: black"><img class="uk-margin-small-left" src="https://img.icons8.com/material/24/000000/search.png" />Events</a></li>
+                    <li class="uk-visible@s uk-margin-right"><a class="nav-link uk-margin-right" style="color: black" href="#drinkMenu"><img class="uk-margin-small-left" src="https://img.icons8.com/ios-glyphs/30/000000/soda-cup.png"/>Drinks</a></li>
+                    <li class="uk-visible@s"><a href="#viewEvents" style="color: black"><img class="uk-margin-small-left" src="https://img.icons8.com/material/30/000000/calendar.png" />Events</a></li>
 
                 </ul>
             </div></div>
@@ -57,13 +57,13 @@
             <img th:src="@{/img/dog_corner.png}" class="nav_img uk-visible@l"/>
 
             <div class="uk-navbar-center-right"><div>
-                <ul class="uk-navbar-nav uk-visible@l">
+                <ul class="uk-navbar-nav uk-visible@l uk-margin-top uk-padding-large">
                     <!--Logged in users see....-->
-                    <li class="uk-visible@s">
-                        <a class="nav-link" href="#merch" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/user-group-man-man.png" />Merchandise</a>
+                    <li class="uk-visible@s uk-margin-right">
+                        <a class="nav-link uk-margin-right" href="#merch" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material-outlined/30/000000/clothes.png" />Merchandise</a>
                     </li>
-                    <li class="uk-visible@s">
-                        <a class="nav-link" href="#merch" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/user-group-man-man.png" />Contact</a>
+                    <li class="uk-visible@s uk-margin-right">
+                        <a class="nav-link uk-margin-right" href="#contactUs" style="color: black"><img class="uk-margin-small-right" src="https://img.icons8.com/material/24/000000/user-group-man-man.png" />Contact</a>
                     </li>
                     <!--Logged out users see....-->
                     <!--<li sec:authorize="!isAuthenticated()" class="uk-visible@s">-->
@@ -122,14 +122,45 @@
 </div>
 
 <a id="viewEvents"></a>
-<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+<div class="uk-child-width-1-1@l uk-grid-match" uk-grid>
     <div>
         <div class="uk-card uk-card-default uk-card-large uk-card-body">
             <h3 class="uk-card-title">Events</h3>
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fluchadorbarsa%2F&tabs=events&width=500&height=500&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
+</div>
+<div class="uk-child-width-1-1@l uk-grid-match" uk-grid>
     <div>
+
+        <a id="merch"></a>
+        <!--<div>-->
+            <!--<div class="uk-card uk-card-default uk-card-large uk-card-body">-->
+                <h2>Merchandise</h2>
+                <!--<img src="../static/img/luchador-logo.JPG" alt="">-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="uk-child-width-1-4@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+                <div class="uk-card uk-card-default uk-card-body uk-grid-margin">Item</div>
+
     <a id="merch"></a>
         <div>
             <div class="uk-card uk-card-default uk-card-large uk-card-body">
@@ -205,8 +236,6 @@
     <!--</section>-->
 <!--</footer>-->
 
-
-<a href="#top">Go to the top of the page</a>
 
 
 <div th:fragment="footer" style="background-color: #000000; color: rgb(244, 0, 0)">
