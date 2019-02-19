@@ -12,5 +12,4 @@ public class AdminController {
 //        this.userDao = userDao;
         this.adminDao = adminDao;
     }
-
 }
