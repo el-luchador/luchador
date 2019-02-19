@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
     <!--<link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>-->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/luchador-logo.JPG" />
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -21,6 +23,7 @@
             height:350px;
             display:block;
         }
+
         .image-collapse {
             position: relative;
             float: left;
@@ -104,36 +107,31 @@ $(document).ready(function () {
 
         </div>
     </nav>
+<div class="uk-section-default uk-text-center" style="background-color: black">
+    <div class="uk-container" style="color: white">
+        Southtown's southern edge vibrant Mexican wrestling theme bar in San Antonio, TX
+    </div>
+</div>
 
 
-
-
-<!--<a id="about"></a>-->
-<!--<h2 class="text-center">About Me</h2>-->
-
-<!--<div id="aboutMe">-->
-    <!--<img data-src="../static/img/luchador-mask-closeup.jpg" width="1450" height="100" alt="" uk-img>-->
-<!--</div>-->
-<!--<div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-sizes="(min-width: 650px) 650px, 100vw" data-src="../static/img/luchador-mask-closeup.jpg" uk-img>-->
-<!--</div>-->
 <div class="uk-section uk-section-default">
     <div class="uk-container">
-
     <a id="drinkMenu"></a>
         <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+            <!--<div>-->
+                <!--<div class="uk-card uk-card-default uk-card-large uk-card-body">-->
+                    <!--<h3 class="uk-card-title">Drink Menu Here</h3>-->
+                    <!--<div class="uk-inline">-->
+                    <!--<img src="../static/img/el-santo.jpg" alt=""/>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
             <div>
                 <div class="uk-card uk-card-default uk-card-large uk-card-body">
-                    <h3 class="uk-card-title">Drink Menu Here</h3>
-                    <div class="uk-inline">
-                    <img src="../static/img/el-santo.jpg" alt=""/>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default uk-card-large uk-card-body">
-                    <h3 class="uk-card-title">Beer Menu Here</h3>
+                    <h3 class="uk-card-title">Beer Menu</h3>
                     <div>
                         <table class="uk-table uk-table-divider" id="dtHorizontalExample">
+                            <caption>Scroll</caption>
                             <thead>
                             <tr>
                                 <th>Beer</th>
@@ -212,28 +210,46 @@ $(document).ready(function () {
                     </div>
                 </div>
             </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-large uk-card-body">
+                    <h3 class="uk-card-title">Drink Menu</h3>
+                    <div>
+                        <table class="uk-table uk-table-justify uk-table-divider">
+                            <caption>Scroll</caption>
+
+                            <thead>
+                            <tr>
+                                <th>Drinks</th>
+                                <th>Ingredients</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Pisco Punch</td>
+                                <td>Lime simple syrup with pineapple</td>
+                            </tr>
+                            <tr>
+                                <td>Seersucker 75</td>
+                                <td>Seersucker gin agave lemon juice and champagne</td>
+                            </tr>
+                            <tr>
+                                <td>Berries from the West</td>
+                                <td>Blue berry vodka agave, lemon juice</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <a id="viewEvents"></a>
-<!--<div class="uk-child-width-1-1@l uk-grid-match" uk-grid>-->
-    <!--<div>-->
-        <!--<div class="uk-card uk-card-default uk-card-large uk-card-body uk-position-center">-->
-            <!--<h3 class="uk-card-title">Events</h3>-->
-            <!--<img data-src="../static/img/luchas-walking.png"  width="" height="" alt="" uk-img />-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div>&ndash;&gt;-->
-        <!--&lt;!&ndash;<div class="uk-card uk-card-default uk-card-large uk-card-body">&ndash;&gt;-->
-            <!--<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fluchadorbarsa%2Fevents%2F&tabs=events&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<div class="uk-section uk-section-default">
+<div class="uk-section uk-section-default events">
     <div class="uk-container">
         <h3>Events</h3>
-        <div class="uk-grid-match uk-child-width-1-2@l" uk-grid>
+        <div class="uk-grid-match uk-child-width-1-2@l uk-child-width-1-1@m uk-child-width-1-1@s" uk-grid>
             <div>
                 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fluchadorbarsa%2Fevents%2F&tabs=events&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </div>
@@ -243,27 +259,22 @@ $(document).ready(function () {
         </div>
     </div>
 </div>
-<!--<div class="uk-child-width-1-1@l uk-grid-match" uk-grid>-->
-    <!--<div>-->
-        <!--<div class="uk-card uk-card-default uk-card-large uk-card-body">-->
-            <!--<h3 class="uk-card-title">Events</h3>-->
-            <!--<img data-src="../static/img/luchas-walking.png"  width="" height="" alt="" uk-img />-->
 
-        <!--</div>-->
-        <!--<div>-->
-            <!--<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fluchadorbarsa%2Fevents%2F&tabs=events&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>-->
-        <!--</div>-->
-    <!--</div>-->
+<div class="uk-section-default">
+    <div class="uk-container uk-text-center">
+        <p><a href="https://www.facebook.com/luchadorbarsa/" style="color: black; background: rgb(253, 222, 0); margin: 5px 10px; padding: 20px; font-size: 30px; text-decoration: none; text-align: center; width: 50px; border-radius: 50%; border-color: black;" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/luchadorbarsa/" style="color: black; background: rgb(253, 222, 0); margin: 5px 10px; padding: 20px; font-size: 30px; text-decoration: none; text-align: center; width: 50px; border-radius: 50%; border-color: black;" class="fa fa-instagram"></a></p>
+    </div>
+</div>
 
-<!--</div>-->
+<a id="merch"></a>
 <div class="uk-section uk-section-default">
     <div class="uk-container">
-<div class="uk-child-width-1-1@l uk-grid-match" uk-grid>
+        <h3>Merchandise</h3>
+        <div class="uk-child-width-1-1@l uk-grid-match" uk-grid>
     <div>
-        <a id="merch"></a>
         <!--<div>-->
-        <div class="uk-card uk-card-large uk-card-body">
-            <h3 class="uk-card-title">Merchandise</h3>
+        <div class="uk-card-large uk-card-body">
                 <!--<img src="../static/img/luchador-logo.JPG" alt="">-->
             <!--</div>-->
         <!--</div>-->
@@ -324,6 +335,14 @@ $(document).ready(function () {
     </div>
 </div>
 
+<div class="uk-section uk-section-default">
+    <div class="uk-container uk-text-center">
+        <p><a href="https://www.facebook.com/luchadorbarsa/" style="color: black; background: rgb(253, 222, 0); margin: 5px 10px; padding: 20px; font-size: 30px; text-decoration: none; text-align: center; width: 50px; border-radius: 50%; border-color: black;" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/luchadorbarsa/" style="color: black; background: rgb(253, 222, 0); margin: 5px 10px; padding: 20px; font-size: 30px; text-decoration: none; text-align: center; width: 50px; border-radius: 50%; border-color: black;" class="fa fa-instagram"></a></p>
+    </div>
+</div>
+
+
 
 <div class="uk-section uk-section-default">
     <div class="uk-container">
@@ -334,13 +353,13 @@ $(document).ready(function () {
                 <h3 class="uk-card-title">El Luchador Bar</h3>
                 <p>622 Roosevelt Rd, San Antonio, TX, 78210</p>
                 <h3>Lucha Hours</h3>
-                <p>Mon      6:00pm - 12:00am</p>
-                <p>Tues     6:00pm - 2:00am</p>
-                <p>Wed      6:00pm - 2:00am</p>
-                <p>Thurs    6:00pm - 2:00am</p>
-                <p>Fri      5:00pm - 12:00am</p>
-                <p>Sat      5:00pm - 12:00am</p>
-                <p>Sun      12:00pm - 12:00am</p>
+                <p>Mon &emsp;6:00pm - 12:00am</p>
+                <p>Tues &emsp;6:00pm - 2:00am</p>
+                <p>Wed &emsp;6:00pm - 2:00am</p>
+                <p>Thurs &emsp;6:00pm - 2:00am</p>
+                <p>Fri &emsp;5:00pm - 12:00am</p>
+                <p>Sat &emsp;5:00pm - 12:00am</p>
+                <p>Sun &emsp;12:00pm - 12:00am</p>
             </div>
         </div>
         <div class="uk-width-1-2">
@@ -385,68 +404,9 @@ $(document).ready(function () {
     </div>
 </div>
 
-
-<!--<div class="uk-child-width-1-1 uk-grid-match" uk-grid>-->
-    <!--<div>-->
-     <!--<div class="uk-card uk-card-large uk-card-body">-->
-         <!--<h3 class="uk-card-title">Contact Us</h3>-->
-
-         <!--&lt;!&ndash;<div class="fb-page" data-href="https://www.facebook.com/luchadorbarsa/" data-tabs="events" data-width="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luchadorbarsa/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luchadorbarsa/">El Luchador</a></blockquote></div>&ndash;&gt;-->
-            <!--<form method="post" class="uk-grid-small" action="mailto:youremailaddress" uk-grid>-->
-                <!--<div class="uk-width-1-1">-->
-                    <!--<label for="email">Email</label>-->
-                    <!--<input id="email"  name="email" class="uk-input" type="text" placeholder="Email">-->
-                <!--</div>-->
-
-                <!--<div class="uk-width-1-4@s">-->
-                    <!--<label for="firstName">First Name</label>-->
-                    <!--<input id="firstName" name="firstName" class="uk-input" type="text" placeholder="First Name">-->
-                <!--</div>-->
-
-                <!--<div class="uk-width-1-4@s">-->
-                    <!--<label for="lastName">Last Name</label>-->
-                    <!--<input id="lastName" name="lastName" class="uk-input" type="text" placeholder="Last Name">-->
-                <!--</div>-->
-
-                <!--<div class="uk-width-1-2@s">-->
-                    <!--<label for="inquiring">What are you inquiring about?</label>-->
-                    <!--<div class="uk-form-controls">-->
-                        <!--<select class="uk-select" id="inquiring">-->
-                            <!--<option>General Inquiry</option>-->
-                            <!--<option>Booking Inquiry</option>-->
-                        <!--</select>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="uk-width-1-1@s">-->
-                    <!--<label for="inquiring">Enter inquiry below</label>-->
-                    <!--<textarea class="uk-textarea" rows="5" placeholder="Type of event, band's name, date, time, etc."></textarea>-->
-                <!--</div>-->
-                <!--<div class="uk-width-expand uk-flex uk-margin-top">-->
-                    <!--<button class="uk-button uk-button-primary" value="Submit" type="submit">Submit</button>-->
-                <!--</div>-->
-            <!--</form>-->
-     <!--</div>-->
-     <!--</div>-->
-<!--</div>-->
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.088333814304!2d-98.48806538480721!3d29.396971882122514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c589e74898b07%3A0xad32537c3419e985!2sEl+Luchador!5e0!3m2!1sen!2sus!4v1550112257868" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-
-
-
-<!--<footer class="col">-->
-    <!--<section id="social" class="row">-->
-        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-        <!--&lt;!&ndash; Add font awesome icons &ndash;&gt;-->
-        <!--&lt;!&ndash; Add icon library &ndash;&gt;-->
-        <!--<a href="https://www.facebook.com/DJ-STEViE-G-satx-169237906485599/" target="_blank" class="fa fa-facebook col-4"></a>-->
-
-        <!--<a href="https://www.instagram.com/luchadorbarsa/" target="_blank" class="fa fa-instagram col-4"></a>-->
-
-        <!--<a href="http://www.twitter.com/DJSTEViEG_satx" target="_blank" class="fa fa-twitter col-4"></a>-->
-    <!--</section>-->
-<!--</footer>-->
-
 
 
 <div th:fragment="footer" style="background-color: #000000; color: rgb(244, 0, 0)">
@@ -459,7 +419,6 @@ $(document).ready(function () {
 <div th:fragment="scripts">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit-icons.min.js"></script>
-
 </div>
 
 </body>
