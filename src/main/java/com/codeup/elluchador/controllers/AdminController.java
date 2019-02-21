@@ -1,8 +1,10 @@
 package com.codeup.elluchador.controllers;
 
 import com.codeup.elluchador.repositories.AdminRepository;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+@Controller
 public class AdminController {
     private final AdminRepository adminDao;
 
@@ -11,6 +13,6 @@ public class AdminController {
     }
     @GetMapping("/")
     public String homePage() {
-        return "/partials";
+        return "system/landing";
     }
 }
