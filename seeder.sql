@@ -10,9 +10,9 @@ CREATE TABLE admin (
 );
 
 DROP TABLE user;
-CREATE TABLE user (
-  id INT UNSIGNED AUTO_INCREMENT NOT NULL,
-  user_first_name VARCHAR(240),
-  user_last_name VARCHAR(240),
-  PRIMARY KEY (id)
-)
+# CREATE TABLE user (
+#   id INT UNSIGNED AUTO_INCREMENT NOT NULL,
+#   user_first_name VARCHAR(240),
+#   user_last_name VARCHAR(240),
+#   PRIMARY KEY (id)
+# )
