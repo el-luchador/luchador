@@ -13,6 +13,6 @@ public class AdminController {
 
     @GetMapping("/")
     public String homePage() {
-        return "/site-content";
+        return "/landing";
     }
 }
