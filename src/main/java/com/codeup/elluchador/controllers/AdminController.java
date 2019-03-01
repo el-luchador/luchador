@@ -11,12 +11,8 @@ public class AdminController {
     @Autowired
     private AdminRepository adminDao;
 
-//    public AdminController (AdminRepository adminDao) {
-//        this.adminDao = adminDao;
-//    }
-
     @GetMapping("/")
     public String homePage() {
-        return "/landing";
+        return "/site-content";
     }
 }

@@ -2,24 +2,24 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head th:replace="partials :: head('El Luchador - Main')"></head>
 <body>
-	<!--<div id="fb-root"></div>-->
-	<!--<script>(function(d, s, id) {-->
-		<!--var js, fjs = d.getElementsByTagName(s)[0];-->
-		<!--if (d.getElementById(id)) return;-->
-		<!--js = d.createElement(s); js.id = id;-->
-		<!--js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1version=v3.2';-->
-		<!--fjs.parentNode.insertBefore(js, fjs);-->
-	<!--}(document, 'script', 'facebook-jssdk'));-->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1version=v3.2';
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
 
-	<!--$(document).ready(function () {-->
-		<!--$('#dtDynamicVerticalScrollExample').DataTable({-->
-			<!--"scrollY": "50vh",-->
-			<!--"scrollCollapse": true-->
-		<!--});-->
-		<!--$('.dataTables_length').addClass('bs-select');-->
-	<!--});-->
+	$(document).ready(function () {
+		$('#dtDynamicVerticalScrollExample').DataTable({
+			"scrollY": "50vh",
+			"scrollCollapse": true
+		});
+		$('.dataTables_length').addClass('bs-select');
+	});
 
-	<!--</script>-->
+	</script>
 	<!--<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar uk-margin-bottom">-->
 	<nav th:replace="partials :: navbar"></nav>
 	<div class="uk-section-default uk-text-center" style="background-color: black">
