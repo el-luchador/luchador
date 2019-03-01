@@ -1,31 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 
-    <meta charset="UTF-8"/>
-    <title>El Luchador</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../static/img/luchador-logo.JPG" />
+<head th:replace="partials :: head('El Luchador')"></head>
 
-    <style>
-        .image-overlay {
-            position: fixed;
-            z-index: 9999;
-            left: 70vw;
-        }
-        .nav-overlay {
-            position: fixed;
-            z-index: 9999;
-            width: 100vw;
-        }
-        .luchador-logo {
-            position: fixed;
-            width: 125px;
-            padding-top: 10px;
-        }
-
-    </style>
-</head>
 <body>
 
 <!--<div class="nav-overlay">-->
@@ -40,37 +17,37 @@
 <header>
     <div class="uk">
 
-        <img src="../../static/img/luchador-logo-color-crop.png" style="width: 100vw;" alt=""/>
+        <img src="../static/img/luchador-logo-color-crop.png" style="width: 100vw;" alt=""/>
 
     </div>
 </header>
 
 
-<div class="uk-background-cover uk-light uk-flex uk-flex-top view-drinks" style="height: 100vh; width: 100vw; background-image: url('../../static/img/drink-ring.jpg');" uk-parallax="bgy: 200">
+<div class="uk-background-cover uk-light uk-flex uk-flex-top view-drinks" style="height: 100vh; width: 100vw; background-image: url('../static/img/drink-ring.jpg');" uk-parallax="bgy: 200">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5"><a class="nav-link uk-margin-right" style="color: white" href="partials/#drinkMenu">View Drinks</a></h1>
 
 </div>
 
-<div class="uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../../static/img/milmascaras.jpg');" uk-parallax="bgy: 200">
+<div class="uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../static/img/milmascaras.jpg');" uk-parallax="bgy: 200">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5"><a href="partials/#viewEvents" style="color: white">Upcoming Events / Past Events</a></h1>
 
 </div>
 
-<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../../static/img/luchador-mask-lowlevel.png');" uk-parallax="bgy: 200">
+<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../static/img/luchador-mask-lowlevel.png');" uk-parallax="bgy: 200">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5"><a href="partials/#merch">Shop Merchandise / Artists</a></h1>
 
 </div>
 
-<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../../static/img/lounge-wall.jpg');" uk-parallax="bgy: 200">
+<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../static/img/lounge-wall.jpg');" uk-parallax="bgy: 200">
 
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5"><a href="partials/#contactUs">Contact Information</a></h1>
 
 </div>
 
-<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../../static/img/outdoor-view.jpg');" uk-parallax="bgy: 200">
+<div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-top" style="height: 100vh; width: 100vw; background-image: url('../static/img/outdoor-view.jpg');" uk-parallax="bgy: 200">
 
     <div class="uk-width-1-2@s uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5"><a class="uk-text-large" href="/">View Website!</a></div>
 
