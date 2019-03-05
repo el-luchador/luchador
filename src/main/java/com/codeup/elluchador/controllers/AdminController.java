@@ -15,4 +15,7 @@ public class AdminController {
     public String homePage() {
         return "/landing";
     }
+
+    @GetMapping("/home")
+    public String sitePage() { return "/site-content"; }
 }

@@ -2,24 +2,8 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head th:replace="partials :: head('El Luchador - Main')"></head>
 <body>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1version=v3.2';
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-
-	$(document).ready(function () {
-		$('#dtDynamicVerticalScrollExample').DataTable({
-			"scrollY": "50vh",
-			"scrollCollapse": true
-		});
-		$('.dataTables_length').addClass('bs-select');
-	});
-
-	</script>
+<!--<div id="fb-root"></div>-->
+<!--<script class="async defer" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&;version=v3.2"></script>-->
 	<!--<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar uk-margin-bottom">-->
 	<nav th:replace="partials :: navbar"></nav>
 	<div class="uk-section-default uk-text-center" style="background-color: black">
@@ -166,8 +150,7 @@
 			<h3>Events</h3>
 			<div class="uk-grid-match uk-child-width-1-2@l uk-child-width-1-1@m uk-child-width-1-1@s" uk-grid="">
 				<div>
-					<!--<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fluchadorbarsa%2Fevents%2F;tabs=events;width=500;height=500;small_header=false;adapt_container_width=true;hide_cover=false;show_facepile=true;appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>-->
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fluchadorbarsa%2Fevents%2F&;tabs=events&;width=500&;height=500&;small_header=false&;adapt_container_width=true&;hide_cover=false&;show_facepile=true&;appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fluchadorbarsa%2F'u0026'tabs=events'u0026'width=340'u0026'height=500'u0026'small_header=false'u0026'adapt_container_width=true'u0026'hide_cover=false'u0026'show_facepile=true'u0026'appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 				</div>
 				<div>
 					<img data-src="../static/img/luchas-walking.png"  width="" height="" alt="" uk-img=""/>
@@ -281,7 +264,7 @@
 				<div class="uk-width-1-2">
 					<h3 class="uk-card-title">Contact Us</h3>
 
-					<!--<div class="fb-page" data-href="https://www.facebook.com/luchadorbarsa/" data-tabs="events" data-width="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luchadorbarsa/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luchadorbarsa/">El Luchador</a></blockquote></div>-->
+					<div class="fb-page" data-href="https://www.facebook.com/luchadorbarsa/" data-tabs="events" data-width="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/luchadorbarsa/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/luchadorbarsa/">El Luchador</a></blockquote></div>
 					<form method="post" class="uk-grid-small" action="mailto:youremailaddress" uk-grid="">
 						<div class="uk-width-1-1">
 							<label for="email">Email</label>
@@ -321,7 +304,7 @@
 	</div>
 
 	<div>
-		<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.088333814304!2d-98.48806538480721!3d29.396971882122514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c589e74898b07%3A0xad32537c3419e985!2sEl+Luchador!5e0!3m2!1sen!2sus!4v1550112257868" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.088333814304!2d-98.48806538480721!3d29.396971882122514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c589e74898b07%3A0xad32537c3419e985!2sEl+Luchador!5e0!3m2!1sen!2sus!4v1550112257868" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
 	</div>
 
 	<div th:replace="partials :: footer"></div>
